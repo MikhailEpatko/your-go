@@ -9,8 +9,8 @@ func TestCalcResult(t *testing.T) {
 	a := assert.New(t)
 	assertCalcResult := func(t testing.TB, got, want float64, err error) {
 		t.Helper()
-		a.Equal(want, got)
 		a.Nil(err)
+		a.Equal(want, got)
 	}
 
 	t.Run("check add", func(t *testing.T) {
