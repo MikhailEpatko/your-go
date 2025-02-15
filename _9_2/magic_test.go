@@ -1,4 +1,4 @@
-package _9_4
+package _9_2
 
 import (
 	"github.com/stretchr/testify/assert"

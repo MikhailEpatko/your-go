@@ -1,4 +1,4 @@
-package _9_4
+package _9_2
 
 import (
 	"fmt"
