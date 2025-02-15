@@ -11,10 +11,10 @@ const (
 )
 
 func CountVowelsInArray(strs [STR_COUNT]string) {
-	fmt.Println(countVowelsInArrayStr(strs))
+	fmt.Println(countVowelsInArrayStr(&strs))
 }
 
-func countVowelsInArrayStr(strs [STR_COUNT]string) string {
+func countVowelsInArrayStr(strs *[STR_COUNT]string) string {
 	var counters [STR_COUNT]int
 	for i, s := range strs {
 		for _, c := range s {
