@@ -11,11 +11,11 @@ const (
 	ROW_DELIMETER    = "\n"
 )
 
-func printTable(num int) {
-	fmt.Print(tableStr(num))
+func PrintTable(num int) {
+	fmt.Print(TableStr(num))
 }
 
-func tableStr(num int) string {
+func TableStr(num int) string {
 	b := strings.Builder{}
 	for i := 1; i <= num; i++ {
 		for j := 1; j <= num; j++ {
