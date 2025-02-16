@@ -7,29 +7,39 @@ import (
 
 func TestIsWeekend(t *testing.T) {
 	a := assert.New(t)
-	asertResult := func(t testing.TB, got, want bool) {
-		t.Helper()
-		a.Equal(want, got)
-	}
 
-	got := IsWeekend(Monday)
-	asertResult(t, got, false)
+	t.Run("", func(t *testing.T) {
+		got := IsWeekend(Monday)
+		a.Equal(false, got)
+	})
 
-	got = IsWeekend(Tuesday)
-	asertResult(t, got, false)
+	t.Run("", func(t *testing.T) {
+		got := IsWeekend(Tuesday)
+		a.Equal(false, got)
+	})
 
-	got = IsWeekend(Wednesday)
-	asertResult(t, got, false)
+	t.Run("", func(t *testing.T) {
+		got := IsWeekend(Wednesday)
+		a.Equal(false, got)
+	})
 
-	got = IsWeekend(Thursday)
-	asertResult(t, got, false)
+	t.Run("", func(t *testing.T) {
+		got := IsWeekend(Thursday)
+		a.Equal(false, got)
+	})
 
-	got = IsWeekend(Friday)
-	asertResult(t, got, false)
+	t.Run("", func(t *testing.T) {
+		got := IsWeekend(Friday)
+		a.Equal(false, got)
+	})
 
-	got = IsWeekend(Saturday)
-	asertResult(t, got, true)
+	t.Run("", func(t *testing.T) {
+		got := IsWeekend(Saturday)
+		a.Equal(true, got)
+	})
 
-	got = IsWeekend(Sunday)
-	asertResult(t, got, true)
+	t.Run("", func(t *testing.T) {
+		got := IsWeekend(Sunday)
+		a.Equal(true, got)
+	})
 }

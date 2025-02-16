@@ -7,16 +7,16 @@ import (
 
 func TestReplceStr(t *testing.T) {
 	a := assert.New(t)
-	assertString := func(t testing.TB, want, got string) {
-		t.Helper()
+
+	t.Run("", func(t *testing.T) {
+		want := "Какашка!"
+		got := replacedStr("Кукушка!")
 		a.Equal(want, got)
-	}
+	})
 
-	want := "Какашка!"
-	got := replacedStr("Кукушка!")
-	assertString(t, want, got)
-
-	want = "Лажа."
-	got = replacedStr("Лужа.")
-	assertString(t, want, got)
+	t.Run("", func(t *testing.T) {
+		want := "Лажа."
+		got := replacedStr("Лужа.")
+		a.Equal(want, got)
+	})
 }

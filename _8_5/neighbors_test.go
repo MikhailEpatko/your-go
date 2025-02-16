@@ -7,12 +7,10 @@ import (
 
 func TestSumNeighbors(t *testing.T) {
 	a := assert.New(t)
-	assertArrays := func(t testing.TB, want, got [ARRAAY_LENGTH]int) {
-		t.Helper()
-		a.Equal(want, got)
-	}
 
-	want := [ARRAAY_LENGTH]int{2, 4, 6, 8, 10, 12, 14, 16, 18, 9}
-	got := SumNeighbors([ARRAAY_LENGTH]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10})
-	assertArrays(t, want, got)
+	t.Run("", func(t *testing.T) {
+		want := [ARRAAY_LENGTH]int{2, 4, 6, 8, 10, 12, 14, 16, 18, 9}
+		got := SumNeighbors([ARRAAY_LENGTH]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10})
+		a.Equal(want, got)
+	})
 }
