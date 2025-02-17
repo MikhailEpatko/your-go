@@ -1,2 +1,2 @@
 # your-go
-study tasks
+study tasks of https://stepik.org/course/220674
